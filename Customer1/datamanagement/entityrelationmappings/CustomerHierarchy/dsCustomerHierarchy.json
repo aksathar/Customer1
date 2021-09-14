@@ -1,0 +1,106 @@
+{
+  "type": "XDM_ENTITY_RELATION_MAPPING",
+  "desc": "Customer Hierarchy",
+  "gitStatus": "",
+  "name": "dsCustomerHierarchy",
+  "inherited": false,
+  "superType": "NONE",
+  "superName": "",
+  "filePath": "",
+  "childs": [
+    {
+      "type": "XDM_NODE",
+      "name": "custHierarchyMaster",
+      "desc": "Customer Hierarchy",
+      "xState": "NEW",
+      "inherited": false,
+      "superName": "",
+      "childs": [
+        {
+          "type": "XDM_ELEMENT",
+          "name": "relationshipStatus",
+          "desc": "Relationship Status",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superName": "",
+          "dataStores": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscusthierarchymaster",
+            "dataStoreColId": "RELATIONSHIPSTATUS"
+          }
+        }
+      ],
+      "relationType": "ONETOONE",
+      "dataStores": [
+        {
+          "dataStoreId": "dscusthierarchymaster",
+          "dataStoreName": "CUSTHIERARCHYMASTER",
+          "parentDataStoreId": "dscusthierarchymaster",
+          "relation": {
+            "relationDefType": "JOIN",
+            "relationAttrs": [
+              {
+                "relationAttr1": "XSYSKEY",
+                "relationAttr2": "XSYSKEY"
+              }
+            ]
+          },
+          "propagationColumns": []
+        }
+      ],
+      "persistenceDetails": {
+        "dataStores": [
+          {
+            "dataStoreId": "dscusthierarchymaster"
+          }
+        ]
+      }
+    }
+  ],
+  "persistenceDetails": {
+    "dataStoreId": "",
+    "dataStoreColId": "",
+    "dataStores": []
+  },
+  "relationType": "ONETOMANY",
+  "dbType": "RDBMS",
+  "xdmDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dscusthierarchymaster",
+        "dataStoreName": "CUSTHIERARCHYMASTER",
+        "parentDataStoreId": "dscusthierarchymaster",
+        "relation": {
+          "relationDefType": "JOIN",
+          "relationAttrs": [
+            {
+              "relationAttr1": "XSYSKEY",
+              "relationAttr2": "XSYSKEY",
+              "column": "XSYSKEY",
+              "parentColumn": "XSYSKEY"
+            }
+          ]
+        },
+        "propagationColumns": []
+      }
+    ]
+  },
+  "masterDataStore": "dscusthierarchymaster",
+  "dbRepository": "",
+  "dstype": "LOWVOLATILE",
+  "dbtype": "RDBMS"
+}

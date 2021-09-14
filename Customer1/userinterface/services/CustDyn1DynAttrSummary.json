@@ -1,0 +1,14 @@
+{
+  "name": "CustDyn1DynAttrSummary",
+  "serviceType": "DYNAMIC_ATTRIBUTE_SEARCH",
+  "entity": "CustDyn1",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM",
+  "origin": "DYNAMIC_ATTRIBUTE",
+  "beanClass": "",
+  "internal": ""
+}

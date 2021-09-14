@@ -1,0 +1,11 @@
+{
+  "name": "CustDyn1DynAttrDelete",
+  "serviceType": "ENTITY_DELETE",
+  "entity": "CustDyn1",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

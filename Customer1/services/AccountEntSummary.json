@@ -1,0 +1,12 @@
+{
+  "name": "AccountEntSummary",
+  "sourceModule": "BE",
+  "sourceAssetName": "Account",
+  "sourceAssetType": "ENTITY",
+  "type": "SERVICE",
+  "serviceType": "MODEL_SEARCH_SERVICE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

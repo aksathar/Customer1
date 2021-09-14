@@ -1,0 +1,253 @@
+{
+  "name": "Response Model",
+  "type": "SERVICE_RESPONSE_MODEL",
+  "desc": "Response Params",
+  "childs": [
+    {
+      "type": "NODE",
+      "superName": "",
+      "name": "accountMaster",
+      "desc": "Account Master",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {},
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "superName": "baAccountId",
+          "name": "accountId",
+          "desc": "ID",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": 5,
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "key": true,
+          "entityKey": true,
+          "filterable": true
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baBranchCode",
+          "name": "accountBranch",
+          "desc": "Branch",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": 3,
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "filterable": true
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baShortDescription",
+          "name": "accountName",
+          "desc": "Name",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": 100,
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baCurrencyCode",
+          "name": "accountCurrency",
+          "desc": "Currency",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": 3,
+            "maxLen": 3,
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        },
+        {
+          "type": "NODE",
+          "superName": "baAuditTrail",
+          "name": "auditTrail",
+          "desc": "Audit Trail",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "COMPOSITE_BUSINESS_ATTRIBUTE",
+          "childs": [
+            {
+              "type": "ELEMENT",
+              "superName": "baUserId",
+              "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+              "name": "createdBy",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {},
+              "relationType": "ONETOONE",
+              "desc": "Created By"
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "superType": "",
+              "name": "createdTS",
+              "inherited": false,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "DATE",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Created Time Stamp"
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "baUserId",
+              "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+              "name": "modifiedBy",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {},
+              "relationType": "ONETOONE",
+              "desc": "Modified By"
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "superType": "",
+              "name": "modifiedTS",
+              "inherited": false,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "DATE",
+                "minLen": "",
+                "maxLen": "",
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Modified TS"
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "superType": "",
+              "name": "recordStatus",
+              "inherited": false,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 1,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Record Status"
+            }
+          ],
+          "relationType": "ONETOONE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baCustomerId",
+          "name": "customerId",
+          "desc": "Customer ID",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": 20,
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        }
+      ],
+      "relationType": "ONETOONE"
+    }
+  ],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": "",
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  },
+  "superType": "",
+  "superName": "",
+  "relationType": "ONETOONE"
+}

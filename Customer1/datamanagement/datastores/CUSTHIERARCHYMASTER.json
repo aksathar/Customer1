@@ -1,0 +1,29 @@
+{
+  "type": "DATA_STORE",
+  "desc": "",
+  "gitStatus": "",
+  "name": "CUSTHIERARCHYMASTER",
+  "inherited": false,
+  "filePath": "",
+  "childs": [],
+  "dbType": "RDBMS",
+  "columns": [
+    {
+      "name": "RELATIONSHIPSTATUS",
+      "dataType": "STRING",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "XSYSKEY",
+      "dataType": "STRING",
+      "length": 4000,
+      "pkColumn": true,
+      "mandatory": false
+    }
+  ],
+  "constraints": [],
+  "xState": "",
+  "childsMap": {}
+}

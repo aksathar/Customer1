@@ -1,0 +1,12 @@
+{
+  "name": "AccountEntCreate1",
+  "sourceModule": "BE",
+  "sourceAssetName": "Account",
+  "sourceAssetType": "ENTITY",
+  "type": "SERVICE",
+  "serviceType": "CREATE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

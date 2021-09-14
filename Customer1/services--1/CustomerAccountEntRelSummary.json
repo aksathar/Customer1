@@ -1,0 +1,11 @@
+{
+  "name": "CustomerAccountEntRelSummary",
+  "serviceType": "ENTITY_RELATION_SEARCH",
+  "entity": "CustomerAccount",
+  "type": "SERVICE",
+  "origin": "ENTITY_RELATION",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

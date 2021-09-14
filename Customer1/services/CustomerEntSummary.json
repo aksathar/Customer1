@@ -1,0 +1,12 @@
+{
+  "name": "CustomerEntSummary",
+  "sourceModule": "BE",
+  "sourceAssetName": "Customer",
+  "sourceAssetType": "ENTITY",
+  "type": "SERVICE",
+  "serviceType": "MODEL_SEARCH_SERVICE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

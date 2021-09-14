@@ -1,0 +1,85 @@
+{
+  "type": "DATA_STORE",
+  "desc": "",
+  "gitStatus": "",
+  "name": "ACCOUNTMASTER",
+  "inherited": false,
+  "filePath": "",
+  "childs": [],
+  "dbType": "RDBMS",
+  "columns": [
+    {
+      "name": "ACCOUNTID",
+      "dataType": "STRING",
+      "length": 30,
+      "pkColumn": true,
+      "mandatory": false
+    },
+    {
+      "name": "ACCOUNTBRANCH",
+      "dataType": "STRING",
+      "length": 3,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "ACCOUNTNAME",
+      "dataType": "STRING",
+      "length": 100,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "ACCOUNTCURRENCY",
+      "dataType": "STRING",
+      "length": 3,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "CREATEDBY",
+      "dataType": "STRING",
+      "length": 30,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "CREATEDTS",
+      "dataType": "DATE",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "MODIFIEDBY",
+      "dataType": "STRING",
+      "length": 30,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "MODIFIEDTS",
+      "dataType": "DATE",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "RECORDSTATUS",
+      "dataType": "STRING",
+      "length": 1,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "CUSTOMERID",
+      "dataType": "STRING",
+      "length": 20,
+      "pkColumn": false,
+      "mandatory": false
+    }
+  ],
+  "constraints": [],
+  "xState": "ADDED",
+  "childsMap": {}
+}

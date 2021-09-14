@@ -1,0 +1,428 @@
+{
+  "type": "XDM_ENTITY_MAPPING",
+  "desc": "",
+  "gitStatus": "",
+  "name": "dsAccount",
+  "inherited": false,
+  "superType": "NONE",
+  "superName": "",
+  "filePath": "",
+  "childs": [
+    {
+      "type": "XDM_NODE",
+      "desc": "Account Master",
+      "gitStatus": "",
+      "name": "accountMaster",
+      "inherited": false,
+      "superType": "NONE",
+      "superName": "",
+      "filePath": "",
+      "xState": "NEW",
+      "childs": [
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "accountId",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baAccountId",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dsaccountmaster",
+            "dataStoreColId": "ACCOUNTID"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_1",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 30,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": true,
+          "filterable": true,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "accountBranch",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baBranchCode",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dsaccountmaster",
+            "dataStoreColId": "ACCOUNTBRANCH"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_2",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 3,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": true,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "accountName",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baShortDescription",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dsaccountmaster",
+            "dataStoreColId": "ACCOUNTNAME"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_10",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 100,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "accountCurrency",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baCurrencyCode",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dsaccountmaster",
+            "dataStoreColId": "ACCOUNTCURRENCY"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_4",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 3,
+            "minLen": 3,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_NODE",
+          "desc": "NewCompositeAttribute",
+          "gitStatus": "",
+          "name": "auditTrail",
+          "inherited": false,
+          "superType": "COMPOSITE_BUSINESS_ATTRIBUTE",
+          "superName": "baAuditTrail",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Created By",
+              "gitStatus": "",
+              "name": "createdBy",
+              "inherited": true,
+              "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+              "superName": "baUserId",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dsaccountmaster",
+                "dataStoreColId": "CREATEDBY"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_11",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 30,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Created Time Stamp",
+              "gitStatus": "",
+              "name": "createdTS",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dsaccountmaster",
+                "dataStoreColId": "CREATEDTS"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_19",
+                "dataType": "DATE",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 2147483647,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Modified By",
+              "gitStatus": "",
+              "name": "modifiedBy",
+              "inherited": true,
+              "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+              "superName": "baUserId",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dsaccountmaster",
+                "dataStoreColId": "MODIFIEDBY"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_11",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 30,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Modified TS",
+              "gitStatus": "",
+              "name": "modifiedTS",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dsaccountmaster",
+                "dataStoreColId": "MODIFIEDTS"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_20",
+                "dataType": "DATE",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 2147483647,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Record Status",
+              "gitStatus": "",
+              "name": "recordStatus",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dsaccountmaster",
+                "dataStoreColId": "RECORDSTATUS"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_21",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 1,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            }
+          ],
+          "persistenceDetails": {
+            "dataStores": [
+              {
+                "dataStoreId": "dsaccountmaster",
+                "dataStoreName": "ACCOUNTMASTER",
+                "parentDataStoreId": "dsaccountmaster",
+                "relation": {
+                  "relationDefType": "JOIN",
+                  "relationAttrs": [
+                    {
+                      "relationAttr1": "ACCOUNTID",
+                      "relationAttr2": "ACCOUNTID"
+                    }
+                  ]
+                },
+                "propagationColumns": []
+              }
+            ]
+          },
+          "relationType": "ONETOONE"
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "customerId",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baCustomerId",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dsaccountmaster",
+            "dataStoreColId": "CUSTOMERID"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_5",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 20,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        }
+      ],
+      "persistenceDetails": {
+        "dataStores": [
+          {
+            "dataStoreId": "dsaccountmaster",
+            "dataStoreName": "ACCOUNTMASTER",
+            "parentDataStoreId": "dsaccountmaster",
+            "relation": {
+              "relationDefType": "JOIN",
+              "relationAttrs": [
+                {
+                  "relationAttr1": "ACCOUNTID",
+                  "relationAttr2": "ACCOUNTID"
+                }
+              ]
+            },
+            "propagationColumns": []
+          }
+        ]
+      },
+      "relationType": "ONETOONE"
+    }
+  ],
+  "persistenceDetails": {
+    "dataStores": []
+  },
+  "relationType": "ONETOONE",
+  "dbType": "RDBMS",
+  "xdmDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dsaccountmaster",
+        "dataStoreName": "ACCOUNTMASTER",
+        "parentDataStoreId": "dsaccountmaster",
+        "relation": {
+          "relationDefType": "JOIN",
+          "relationAttrs": [
+            {
+              "relationAttr1": "ACCOUNTID",
+              "relationAttr2": "ACCOUNTID"
+            }
+          ]
+        },
+        "propagationColumns": []
+      }
+    ]
+  },
+  "masterDataStore": "dsaccountmaster"
+}

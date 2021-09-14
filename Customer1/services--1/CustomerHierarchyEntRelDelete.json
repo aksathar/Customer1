@@ -1,0 +1,11 @@
+{
+  "name": "CustomerHierarchyEntRelDelete",
+  "serviceType": "ENTITY_DELETE",
+  "entity": "CustomerHierarchy",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

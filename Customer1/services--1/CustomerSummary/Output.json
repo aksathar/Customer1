@@ -1,0 +1,278 @@
+{
+  "name": "Output",
+  "type": "OUTPUT",
+  "desc": "Output Params",
+  "childs": [
+    {
+      "type": "NODE",
+      "superName": "",
+      "name": "customerMaster",
+      "desc": "Customer",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {},
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "superName": "baCustomerId",
+          "name": "custId",
+          "desc": "ID",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "key": true,
+          "entityKey": true,
+          "filterable": true
+        },
+        {
+          "type": "NODE",
+          "superName": "baName",
+          "name": "custName",
+          "desc": "Customer Name",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "COMPOSITE_BUSINESS_ATTRIBUTE",
+          "childs": [
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "superType": "",
+              "name": "title",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 10,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Title"
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "superType": "",
+              "name": "firstName",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 100,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "First Name"
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "superType": "",
+              "name": "middleName",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 100,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Middle Name"
+            },
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "superType": "",
+              "name": "lastName",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 100,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Last Name"
+            }
+          ],
+          "relationType": "ONETOONE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baSex",
+          "name": "sex",
+          "desc": "Gender",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "dob",
+          "desc": "Date of Birth",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "DATE",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "filterable": true
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baEmail",
+          "name": "email",
+          "desc": "Email",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baCountryCode",
+          "name": "country",
+          "desc": "Country",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baRegionCode",
+          "name": "region",
+          "desc": "Region",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baCurrencyCode",
+          "name": "currency",
+          "desc": "Currency",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baLanguage",
+          "name": "language",
+          "desc": "Language",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        },
+        {
+          "type": "NODE",
+          "superName": "baAuditTrail",
+          "name": "auditTrail",
+          "desc": "Aduit Trail",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "COMPOSITE_BUSINESS_ATTRIBUTE",
+          "childs": [
+            {
+              "type": "ELEMENT",
+              "superName": "",
+              "superType": "",
+              "name": "recordStatus",
+              "inherited": true,
+              "dataAttrType": "ELEMENT",
+              "properties": {
+                "dataType": "STRING",
+                "minLen": "",
+                "maxLen": 1,
+                "strValidationType": "NONE",
+                "pattern": "",
+                "lovId": "",
+                "minVal": "",
+                "maxVal": "",
+                "maxDecimals": "",
+                "minDate": "",
+                "maxDate": ""
+              },
+              "relationType": "ONETOONE",
+              "desc": "Record Status"
+            }
+          ],
+          "relationType": "ONETOONE"
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "baCustomerId",
+          "name": "parentCustId",
+          "desc": "Parent ID",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {},
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE"
+        }
+      ],
+      "relationType": "ONETOONE"
+    }
+  ],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": "",
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  }
+}

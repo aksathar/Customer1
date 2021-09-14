@@ -1,0 +1,12 @@
+{
+  "name": "CustDrv1DrvAttrSummary",
+  "serviceType": "DERIVED_ATTRIBUTE_SEARCH",
+  "entity": "CustDrv1",
+  "parentEntity": "Customer",
+  "type": "SERVICE",
+  "origin": "DERIVED_ATTRIBUTE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

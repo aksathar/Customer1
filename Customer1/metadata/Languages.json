@@ -1,0 +1,15 @@
+{
+  "type": "LANGUAGES",
+  "name": "LANGUAGES",
+  "languages": [
+    {
+      "langCode": "en",
+      "langDesc": "English"
+    },
+    {
+      "xState": "ADDED",
+      "langCode": "fr",
+      "langDesc": "French"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "name": "Output",
+  "type": "OUTPUT",
+  "desc": "Output Params",
+  "childs": [
+    {
+      "type": "NODE",
+      "superName": "",
+      "name": "custDrvNode",
+      "desc": "Derived Attributes",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {},
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "dAttr1",
+          "desc": "Attribute 1",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "key": false,
+          "entityKey": true
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "dAttr2",
+          "desc": "Attribute 2",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          }
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "dAttr3",
+          "desc": "Attribute 3",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          }
+        }
+      ],
+      "relationType": "ONETOONE"
+    }
+  ],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": "",
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "baAccountId",
+  "type": "SIMPLEBIZATTRIBUTE",
+  "childs": [],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": 30,
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  },
+  "desc": "Account Id",
+  "dataAttrType": "",
+  "superType": "",
+  "superName": ""
+}

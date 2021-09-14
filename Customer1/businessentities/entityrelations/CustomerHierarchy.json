@@ -1,0 +1,139 @@
+{
+  "name": "CustomerHierarchy",
+  "type": "ENTITY_RELATION",
+  "childs": [
+    {
+      "type": "NODE",
+      "name": "custHierarchyMaster",
+      "desc": "Customer Hierarchy",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "superName": "",
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "name": "relationshipStatus",
+          "desc": "Relationship Status",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superName": ""
+        }
+      ],
+      "relationType": "ONETOONE"
+    }
+  ],
+  "superType": "",
+  "superName": "",
+  "entity1": "Customer",
+  "role1": "Parent",
+  "xdmMapping": "dsCustomerHierarchy",
+  "desc": "Customer Hierarchy",
+  "entity2": "Customer",
+  "role2": "Child",
+  "relationType": "ONETOMANY",
+  "auditRequired": "",
+  "auditXdmMapping": "",
+  "customCondition": "",
+  "key": "",
+  "filterable": "",
+  "resultSet": "",
+  "dataStoreId": "",
+  "dataStoreColId": "",
+  "inherited": "",
+  "ent": {
+    "root": {
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 1,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    }
+  },
+  "properties": {},
+  "conditionality": [],
+  "services": [
+    {
+      "name": "CustomerHierarchyEntRelCreate",
+      "type": "MODEL_CREATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustomerHierarchyEntRelUpdate",
+      "type": "MODEL_UPDATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "serviceName": "Query",
+      "type": "MODEL_QUERY_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": "",
+      "name": "CustomerHierarchyEntRelQuery"
+    },
+    {
+      "name": "CustomerHierarchyEntRelDelete",
+      "type": "MODEL_DELETE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "xState": "ADDED",
+      "type": "MODEL_SEARCH_SERVICE",
+      "name": "CustomerHierarchyEntRelSummry",
+      "enabled": true
+    }
+  ],
+  "mandatory1": "",
+  "mandatory2": ""
+}

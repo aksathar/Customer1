@@ -1,0 +1,141 @@
+{
+  "type": "DATA_STORE",
+  "desc": "",
+  "gitStatus": "",
+  "name": "CUSTOMERMASTER",
+  "inherited": false,
+  "filePath": "",
+  "childs": [],
+  "dbType": "RDBMS",
+  "columns": [
+    {
+      "name": "CUSTID",
+      "dataType": "STRING",
+      "length": 20,
+      "pkColumn": true,
+      "mandatory": false
+    },
+    {
+      "name": "TITLE",
+      "dataType": "STRING",
+      "length": 10,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "FIRSTNAME",
+      "dataType": "STRING",
+      "length": 100,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "MIDDLENAME",
+      "dataType": "STRING",
+      "length": 100,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "LASTNAME",
+      "dataType": "STRING",
+      "length": 100,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "SEX",
+      "dataType": "STRING",
+      "length": 2,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "DOB",
+      "dataType": "DATE",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "EMAIL",
+      "dataType": "STRING",
+      "length": 100,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "COUNTRY",
+      "dataType": "STRING",
+      "length": 3,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "REGION",
+      "dataType": "STRING",
+      "length": 10,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "CURRENCY",
+      "dataType": "STRING",
+      "length": 3,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "LANGUAGE",
+      "dataType": "STRING",
+      "length": 2,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "CREATEDBY",
+      "dataType": "STRING",
+      "length": 30,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "CREATEDTS",
+      "dataType": "DATE",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "MODIFIEDBY",
+      "dataType": "STRING",
+      "length": 30,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "MODIFIEDTS",
+      "dataType": "DATE",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "RECORDSTATUS",
+      "dataType": "STRING",
+      "length": 1,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "PARENTCUSTID",
+      "dataType": "STRING",
+      "length": 20,
+      "pkColumn": false,
+      "mandatory": false
+    }
+  ],
+  "constraints": [],
+  "xState": "ADDED",
+  "childsMap": {}
+}

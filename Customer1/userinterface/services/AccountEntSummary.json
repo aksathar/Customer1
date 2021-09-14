@@ -1,0 +1,12 @@
+{
+  "name": "AccountEntSummary",
+  "serviceType": "ENTITY_SEARCH",
+  "entity": "Account",
+  "parentEntity": "Customer",
+  "type": "SERVICE",
+  "origin": "ENTITY",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

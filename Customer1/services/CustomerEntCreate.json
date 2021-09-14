@@ -1,0 +1,12 @@
+{
+  "name": "CustomerEntCreate",
+  "sourceModule": "BE",
+  "sourceAssetName": "Customer",
+  "sourceAssetType": "ENTITY",
+  "type": "SERVICE",
+  "serviceType": "MODEL_CREATE_SERVICE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "CustDyn1DynAttrUpdate1",
+  "sourceModule": "BE",
+  "sourceAssetName": "AcctDyn1",
+  "sourceAssetType": "DYNAMIC_ATTRIBUTE",
+  "type": "SERVICE",
+  "serviceType": "UPDATE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

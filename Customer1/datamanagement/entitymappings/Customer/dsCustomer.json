@@ -1,0 +1,721 @@
+{
+  "type": "XDM_ENTITY_MAPPING",
+  "desc": "",
+  "gitStatus": "",
+  "name": "dsCustomer",
+  "inherited": false,
+  "superType": "NONE",
+  "superName": "",
+  "filePath": "",
+  "childs": [
+    {
+      "type": "XDM_NODE",
+      "desc": "NewCompositeAttribute",
+      "gitStatus": "",
+      "name": "customerMaster",
+      "inherited": false,
+      "superType": "NONE",
+      "superName": "",
+      "filePath": "",
+      "xState": "NEW",
+      "childs": [
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "custId",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baCustomerId",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "CUSTID"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_5",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 20,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": true,
+          "filterable": true,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_NODE",
+          "desc": "Customer Name",
+          "gitStatus": "",
+          "name": "custName",
+          "inherited": false,
+          "superType": "COMPOSITE_BUSINESS_ATTRIBUTE",
+          "superName": "baName",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Title",
+              "gitStatus": "",
+              "name": "title",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "TITLE"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_22",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 10,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "First Name",
+              "gitStatus": "",
+              "name": "firstName",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "FIRSTNAME"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_23",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 100,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Middle Name",
+              "gitStatus": "",
+              "name": "middleName",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "MIDDLENAME"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_24",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 100,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Last Name",
+              "gitStatus": "",
+              "name": "lastName",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "LASTNAME"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_25",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 100,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            }
+          ],
+          "persistenceDetails": {
+            "dataStores": [
+              {
+                "dataStoreId": "dscustomermaster",
+                "dataStoreName": "CUSTOMERMASTER",
+                "parentDataStoreId": "dscustomermaster",
+                "relation": {
+                  "relationDefType": "JOIN",
+                  "relationAttrs": [
+                    {
+                      "relationAttr1": "CUSTID",
+                      "relationAttr2": "CUSTID"
+                    }
+                  ]
+                },
+                "propagationColumns": []
+              }
+            ]
+          },
+          "relationType": "ONETOONE"
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "sex",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baSex",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "SEX"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_9",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 2,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "dob",
+          "inherited": false,
+          "superType": "NONE",
+          "superName": "",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "DOB"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_26",
+            "dataType": "DATE",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 2147483647,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": true,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "email",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baEmail",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "EMAIL"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_6",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "EMAIL",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 100,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "country",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baCountryCode",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "COUNTRY"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_3",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 3,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "region",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baRegionCode",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "REGION"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_8",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 10,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "currency",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baCurrencyCode",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "CURRENCY"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_4",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 3,
+            "minLen": 3,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "language",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baLanguage",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "LANGUAGE"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_7",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 2,
+            "minLen": 2,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_NODE",
+          "desc": "NewCompositeAttribute",
+          "gitStatus": "",
+          "name": "auditTrail",
+          "inherited": false,
+          "superType": "COMPOSITE_BUSINESS_ATTRIBUTE",
+          "superName": "baAuditTrail",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Created By",
+              "gitStatus": "",
+              "name": "createdBy",
+              "inherited": true,
+              "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+              "superName": "baUserId",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "CREATEDBY"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_11",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 30,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Created Time Stamp",
+              "gitStatus": "",
+              "name": "createdTS",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "CREATEDTS"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_27",
+                "dataType": "DATE",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 2147483647,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Modified By",
+              "gitStatus": "",
+              "name": "modifiedBy",
+              "inherited": true,
+              "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+              "superName": "baUserId",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "MODIFIEDBY"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_11",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 30,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Modified TS",
+              "gitStatus": "",
+              "name": "modifiedTS",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "MODIFIEDTS"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_28",
+                "dataType": "DATE",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 2147483647,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            },
+            {
+              "type": "XDM_ELEMENT",
+              "desc": "Record Status",
+              "gitStatus": "",
+              "name": "recordStatus",
+              "inherited": true,
+              "superType": "NONE",
+              "superName": "",
+              "filePath": "",
+              "childs": [],
+              "persistenceDetails": {
+                "dataStores": [],
+                "dataStoreId": "dscustomermaster",
+                "dataStoreColId": "RECORDSTATUS"
+              },
+              "properties": {
+                "propClassName": "SYS_X3_29",
+                "dataType": "STRING",
+                "mandatory": false,
+                "strValidationType": "NONE",
+                "minDate": "292269055-12-02",
+                "maxDate": "292278994-08-17",
+                "maxDecimals": 2147483647,
+                "maxLen": 1,
+                "minLen": 0,
+                "maxVal": 0,
+                "minVal": 0
+              },
+              "key": false,
+              "filterable": false,
+              "resultSet": true
+            }
+          ],
+          "persistenceDetails": {
+            "dataStores": [
+              {
+                "dataStoreId": "dscustomermaster",
+                "dataStoreName": "CUSTOMERMASTER",
+                "parentDataStoreId": "dscustomermaster",
+                "relation": {
+                  "relationDefType": "JOIN",
+                  "relationAttrs": [
+                    {
+                      "relationAttr1": "CUSTID",
+                      "relationAttr2": "CUSTID"
+                    }
+                  ]
+                },
+                "propagationColumns": []
+              }
+            ]
+          },
+          "relationType": "ONETOONE"
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "parentCustId",
+          "inherited": false,
+          "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+          "superName": "baCustomerId",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustomermaster",
+            "dataStoreColId": "PARENTCUSTID"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_5",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 20,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        }
+      ],
+      "persistenceDetails": {
+        "dataStores": [
+          {
+            "dataStoreId": "dscustomermaster",
+            "dataStoreName": "CUSTOMERMASTER",
+            "parentDataStoreId": "dscustomermaster",
+            "relation": {
+              "relationDefType": "JOIN",
+              "relationAttrs": [
+                {
+                  "relationAttr1": "CUSTID",
+                  "relationAttr2": "CUSTID"
+                }
+              ]
+            },
+            "propagationColumns": []
+          }
+        ]
+      },
+      "relationType": "ONETOONE"
+    }
+  ],
+  "persistenceDetails": {
+    "dataStores": []
+  },
+  "relationType": "ONETOONE",
+  "dbType": "RDBMS",
+  "xdmDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dscustomermaster",
+        "dataStoreName": "CUSTOMERMASTER",
+        "parentDataStoreId": "dscustomermaster",
+        "relation": {
+          "relationDefType": "JOIN",
+          "relationAttrs": [
+            {
+              "relationAttr1": "CUSTID",
+              "relationAttr2": "CUSTID"
+            }
+          ]
+        },
+        "propagationColumns": []
+      }
+    ]
+  },
+  "masterDataStore": "dscustomermaster"
+}

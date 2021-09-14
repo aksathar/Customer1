@@ -1,0 +1,11 @@
+{
+  "name": "CustDyn1DynAttrCreate",
+  "serviceType": "ENTITY_CREATE",
+  "entity": "CustDyn1",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

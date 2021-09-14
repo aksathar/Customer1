@@ -1,0 +1,81 @@
+{
+  "Customer1": {
+    "name": "Customer1",
+    "uiReq": "Y",
+    "uiType": "EMBEDDED",
+    "logPath": "D:\\logs",
+    "jndiName": "customer",
+    "firstScreen": "Login",
+    "lang": "en",
+    "deployments": [
+      {
+        "deploymentId": "XLRT_DEPL_1",
+        "type": "EMBEDDED",
+        "action": "BUILD",
+        "params": {
+          "uiRequired": "Y",
+          "services": [
+            "AccountCreate",
+            "AccountEntCreate",
+            "AccountEntDelete",
+            "AccountEntQuery",
+            "AccountEntSummary",
+            "AccountEntUpdate",
+            "AccountSummary",
+            "CustDrv1DrvAttrCreate",
+            "CustDrv1DrvAttrSummary",
+            "CustDyn1DynAttrCreate",
+            "CustDyn1DynAttrDelete",
+            "CustDyn1DynAttrQuery",
+            "CustDyn1DynAttrSummary",
+            "CustDyn1DynAttrUpdate",
+            "CustomerAccountEntRelCreate",
+            "CustomerAccountEntRelDelete",
+            "CustomerAccountEntRelQuery",
+            "CustomerAccountEntRelSummary",
+            "CustomerAccountEntRelUpdate",
+            "CustomerCreate",
+            "CustomerEntCreate",
+            "CustomerEntDelete",
+            "CustomerEntQuery",
+            "CustomerEntSummary",
+            "CustomerEntUpdate",
+            "CustomerHierarchyEntRelCreate",
+            "CustomerHierarchyEntRelDelete",
+            "CustomerHierarchyEntRelQuery",
+            "CustomerHierarchyEntRelSummry",
+            "CustomerHierarchyEntRelUpdate",
+            "CustomerSummary"
+          ],
+          "screens": [
+            "AccountCreate",
+            "AccountEntCreate",
+            "AccountEntSummary",
+            "AccountSummary",
+            "CustomerCreate",
+            "CustomerSummary",
+            "CustomerSummary1",
+            "LandingPage",
+            "Login"
+          ],
+          "entities": [
+            "Account",
+            "Customer"
+          ],
+          "lang": [
+            "en"
+          ]
+        },
+        "props": {
+          "logLevel": "ALL",
+          "firstScreen": "Login",
+          "puName": "Customer1",
+          "jndiName": "Customer1",
+          "logPath": "D:\\Logs"
+        },
+        "preferences": {},
+        "deploymentName": "Customer"
+      }
+    ]
+  }
+}

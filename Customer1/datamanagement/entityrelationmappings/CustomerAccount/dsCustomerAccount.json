@@ -1,0 +1,106 @@
+{
+  "type": "XDM_ENTITY_RELATION_MAPPING",
+  "desc": "Customer Account Relationship",
+  "gitStatus": "",
+  "name": "dsCustomerAccount",
+  "inherited": false,
+  "superType": "NONE",
+  "superName": "",
+  "filePath": "",
+  "childs": [
+    {
+      "type": "XDM_NODE",
+      "name": "custAccMaster",
+      "desc": "Customer Account",
+      "xState": "NEW",
+      "inherited": false,
+      "superName": "",
+      "childs": [
+        {
+          "type": "XDM_ELEMENT",
+          "name": "relationshipStatus",
+          "desc": "Relationship Status",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superName": "",
+          "dataStores": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustaccmaster",
+            "dataStoreColId": "RELATIONSHIPSTATUS"
+          }
+        }
+      ],
+      "relationType": "ONETOONE",
+      "dataStores": [
+        {
+          "dataStoreId": "dscustaccmaster",
+          "dataStoreName": "CUSTACCMASTER",
+          "parentDataStoreId": "dscustaccmaster",
+          "relation": {
+            "relationDefType": "JOIN",
+            "relationAttrs": [
+              {
+                "relationAttr1": "XSYSKEY",
+                "relationAttr2": "XSYSKEY"
+              }
+            ]
+          },
+          "propagationColumns": []
+        }
+      ],
+      "persistenceDetails": {
+        "dataStores": [
+          {
+            "dataStoreId": "dscustaccmaster"
+          }
+        ]
+      }
+    }
+  ],
+  "persistenceDetails": {
+    "dataStoreId": "",
+    "dataStoreColId": "",
+    "dataStores": []
+  },
+  "relationType": "ONETOONE",
+  "dbType": "RDBMS",
+  "xdmDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dscustaccmaster",
+        "dataStoreName": "CUSTACCMASTER",
+        "parentDataStoreId": "dscustaccmaster",
+        "relation": {
+          "relationDefType": "JOIN",
+          "relationAttrs": [
+            {
+              "relationAttr1": "XSYSKEY",
+              "relationAttr2": "XSYSKEY",
+              "column": "XSYSKEY",
+              "parentColumn": "XSYSKEY"
+            }
+          ]
+        },
+        "propagationColumns": []
+      }
+    ]
+  },
+  "masterDataStore": "dscustaccmaster",
+  "dbRepository": "",
+  "dstype": "LOWVOLATILE",
+  "dbtype": "RDBMS"
+}

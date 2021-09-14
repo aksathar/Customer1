@@ -1,0 +1,11 @@
+{
+  "name": "CustDyn1DynAttrCreate1",
+  "serviceType": "DYNAMIC_ATTRIBUTE_CREATE",
+  "entity": "AcctDyn1",
+  "type": "SERVICE",
+  "origin": "DYNAMIC_ATTRIBUTE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

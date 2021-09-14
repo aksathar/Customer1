@@ -1,0 +1,11 @@
+{
+  "name": "CustomerEntCreate",
+  "serviceType": "ENTITY_CREATE",
+  "entity": "Customer",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

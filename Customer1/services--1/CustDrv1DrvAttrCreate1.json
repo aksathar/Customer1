@@ -1,0 +1,11 @@
+{
+  "name": "CustDrv1DrvAttrCreate1",
+  "serviceType": "DERIVED_ATTRIBUTE_CREATE",
+  "entity": "CustDrv1",
+  "type": "SERVICE",
+  "origin": "DERIVED_ATTRIBUTE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

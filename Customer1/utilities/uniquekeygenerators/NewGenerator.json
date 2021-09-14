@@ -1,0 +1,11 @@
+{
+  "name": "NewGenerator",
+  "desc": "",
+  "type": "UNIQUE_KEY_GENERATOR",
+  "childs": [],
+  "category": "SEQUENCE",
+  "pattern": "",
+  "length": "",
+  "minValue": "",
+  "maxValue": ""
+}

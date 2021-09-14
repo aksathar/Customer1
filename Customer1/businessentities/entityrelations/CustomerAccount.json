@@ -1,0 +1,128 @@
+{
+  "name": "CustomerAccount",
+  "type": "ENTITY_RELATION",
+  "childs": [
+    {
+      "type": "NODE",
+      "name": "custAccMaster",
+      "desc": "Customer Account",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {},
+      "superName": "",
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "name": "relationshipStatus",
+          "desc": "Relationship Status",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "superName": "",
+          "filterable": true
+        }
+      ],
+      "relationType": "ONETOONE"
+    }
+  ],
+  "superType": "",
+  "superName": "",
+  "entity1": "Customer",
+  "role1": "Customer",
+  "xdmMapping": "dsCustomerAccount",
+  "desc": "Customer Account Relationship",
+  "entity2": "Account",
+  "role2": "Account",
+  "relationType": "ONETOONE",
+  "auditRequired": "",
+  "auditXdmMapping": "",
+  "customCondition": "",
+  "key": "",
+  "filterable": "",
+  "resultSet": "",
+  "dataStoreId": "",
+  "dataStoreColId": "",
+  "inherited": "",
+  "ent": {
+    "root": {
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 1,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    }
+  },
+  "properties": {},
+  "conditionality": [],
+  "services": [
+    {
+      "name": "CustomerAccountEntRelCreate",
+      "type": "MODEL_CREATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustomerAccountEntRelUpdate",
+      "type": "MODEL_UPDATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "serviceName": "Query",
+      "type": "MODEL_QUERY_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": "",
+      "name": "CustomerAccountEntRelQuery"
+    },
+    {
+      "name": "CustomerAccountEntRelDelete",
+      "type": "MODEL_DELETE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "xState": "ADDED",
+      "type": "MODEL_SEARCH_SERVICE",
+      "name": "CustomerAccountEntRelSummary",
+      "enabled": true
+    }
+  ],
+  "mandatory1": true,
+  "mandatory2": false
+}

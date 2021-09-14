@@ -1,0 +1,11 @@
+{
+  "name": "CustomerSummary",
+  "serviceType": "ENTITY_SEARCH",
+  "entity": "Customer",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "ADDED",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

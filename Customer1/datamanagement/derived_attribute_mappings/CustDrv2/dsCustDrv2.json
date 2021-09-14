@@ -1,0 +1,134 @@
+{
+  "type": "XDM_DERIVED_ATTRIBUTE_MAPPING",
+  "desc": "",
+  "gitStatus": "",
+  "name": "dsCustDrv2",
+  "inherited": false,
+  "superType": "NONE",
+  "superName": "",
+  "filePath": "",
+  "childs": [
+    {
+      "type": "XDM_NODE",
+      "desc": "NewCompositeAttribute",
+      "gitStatus": "",
+      "name": "custN1",
+      "inherited": false,
+      "superType": "NONE",
+      "superName": "",
+      "filePath": "",
+      "xState": "NEW",
+      "childs": [
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "NewSimpleAttribute",
+          "gitStatus": "",
+          "name": "custE1",
+          "inherited": false,
+          "superType": "NONE",
+          "superName": "",
+          "filePath": "",
+          "xState": "NEW",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustn1",
+            "dataStoreColId": "CUSTE1"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_38",
+            "dataType": "STRING",
+            "mandatory": false,
+            "strValidationType": "NONE",
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 2147483647,
+            "minLen": 0,
+            "maxVal": 0,
+            "minVal": 0
+          },
+          "entityKey": false,
+          "key": false,
+          "filterable": false,
+          "resultSet": true
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "desc": "",
+          "gitStatus": "",
+          "name": "xSysKey",
+          "inherited": false,
+          "filePath": "",
+          "childs": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustn1",
+            "dataStoreColId": "XSYSKEY"
+          },
+          "properties": {
+            "propClassName": "SYS_X3_39",
+            "dataType": "STRING",
+            "mandatory": false,
+            "minDate": "292269055-12-02",
+            "maxDate": "292278994-08-17",
+            "maxDecimals": 2147483647,
+            "maxLen": 4000,
+            "minLen": 0,
+            "maxVal": 1.7976931348623157e+308,
+            "minVal": 5e-324
+          },
+          "entityKey": true,
+          "key": true,
+          "filterable": false,
+          "resultSet": true
+        }
+      ],
+      "persistenceDetails": {
+        "dataStores": [
+          {
+            "dataStoreId": "dscustn1",
+            "dataStoreName": "CUSTN1",
+            "parentDataStoreId": "dscustn1",
+            "relation": {
+              "relationDefType": "JOIN",
+              "relationAttrs": [
+                {
+                  "relationAttr1": "XSYSKEY",
+                  "relationAttr2": "XSYSKEY"
+                }
+              ]
+            },
+            "propagationColumns": []
+          }
+        ]
+      },
+      "relationType": "ONETOONE"
+    }
+  ],
+  "persistenceDetails": {
+    "dataStores": []
+  },
+  "relationType": "ONETOONE",
+  "dbType": "RDBMS",
+  "xdmDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dscustn1",
+        "dataStoreName": "CUSTN1",
+        "parentDataStoreId": "dscustn1",
+        "relation": {
+          "relationDefType": "JOIN",
+          "relationAttrs": [
+            {
+              "relationAttr1": "XSYSKEY",
+              "relationAttr2": "XSYSKEY"
+            }
+          ]
+        },
+        "propagationColumns": []
+      }
+    ]
+  },
+  "masterDataStore": "dscustn1"
+}

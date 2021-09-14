@@ -1,0 +1,175 @@
+{
+  "name": "CustDrv1",
+  "type": "DERIVED_ATTRIBUTE",
+  "childs": [
+    {
+      "type": "NODE",
+      "superName": "",
+      "name": "custDrvNode",
+      "desc": "Derived Attributes",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {},
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "dAttr1",
+          "desc": "Attribute 1",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "key": true,
+          "entityKey": true,
+          "filterable": true
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "dAttr2",
+          "desc": "Attribute 2",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "filterable": true
+        },
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "dAttr3",
+          "desc": "Attribute 3",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "filterable": true
+        }
+      ],
+      "relationType": "ONETOONE"
+    }
+  ],
+  "services": [
+    {
+      "name": "CustDrv1DrvAttrCreate",
+      "type": "MODEL_CREATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDrv1DrvAttrUpdate",
+      "type": "MODEL_UPDATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDrv1DrvAttrQuery",
+      "type": "MODEL_QUERY_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDrv1DrvAttrDelete",
+      "type": "MODEL_DELETE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDrv1DrvAttrSummary",
+      "type": "MODEL_SEARCH_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    }
+  ],
+  "superType": "",
+  "superName": "",
+  "xdmMapping": "dsCustDrv1",
+  "desc": "test",
+  "key": "",
+  "relationType": "ONETOONE",
+  "auditRequired": "",
+  "auditXdmMapping": "",
+  "timeBound": "",
+  "filterable": "",
+  "resultSet": "",
+  "entityKey": "",
+  "dataStoreId": "",
+  "dataStoreColId": "",
+  "inherited": "",
+  "ent": {
+    "root": {
+      "properties": {
+        "dataType": "STRING",
+        "minLen": 1,
+        "maxLen": 100,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    }
+  },
+  "properties": {},
+  "relations": [],
+  "constraints": [],
+  "sourceEntity": "Customer",
+  "mandatory": ""
+}

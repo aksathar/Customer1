@@ -1,0 +1,103 @@
+{
+  "name": "baAuditTrail",
+  "type": "COMPOSITE_BUSINESS_ATTRIBUTE",
+  "childs": [
+    {
+      "type": "ELEMENT",
+      "superName": "baUserId",
+      "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+      "name": "createdBy",
+      "inherited": true,
+      "dataAttrType": "ELEMENT",
+      "properties": {},
+      "relationType": "ONETOONE",
+      "desc": "Created By"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "",
+      "name": "createdTS",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "DATE",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE",
+      "desc": "Created Time Stamp"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "baUserId",
+      "superType": "SIMPLE_BUSINESS_ATTRIBUTE",
+      "name": "modifiedBy",
+      "inherited": true,
+      "dataAttrType": "ELEMENT",
+      "properties": {},
+      "relationType": "ONETOONE",
+      "desc": "Modified By"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "",
+      "name": "modifiedTS",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "DATE",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE",
+      "desc": "Modified TS"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "",
+      "name": "recordStatus",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 1,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE",
+      "desc": "Record Status"
+    }
+  ],
+  "desc": "Audit Trail",
+  "dataAttrType": "NODE",
+  "superType": "",
+  "superName": "",
+  "relationType": "ONETOONE",
+  "properties": {}
+}

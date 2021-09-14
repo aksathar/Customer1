@@ -1,0 +1,11 @@
+{
+  "name": "CustomerAccountEntRelCreate",
+  "serviceType": "ENTITY_RELATION_CREATE",
+  "entity": "CustomerAccount",
+  "type": "SERVICE",
+  "origin": "ENTITY_RELATION",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "CustomerEntDelete",
+  "serviceType": "ENTITY_DELETE",
+  "entity": "Customer",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

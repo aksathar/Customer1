@@ -1,0 +1,11 @@
+{
+  "name": "AccountEntSummary1",
+  "serviceType": "ENTITY_SEARCH",
+  "entity": "Account",
+  "type": "SERVICE",
+  "origin": "ENTITY",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

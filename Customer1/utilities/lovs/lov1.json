@@ -1,0 +1,35 @@
+{
+  "name": "lov1",
+  "desc": "",
+  "type": "LOV",
+  "childs": [],
+  "lovType": "ENTITY",
+  "dataCategory": "",
+  "enumeration": "",
+  "sourceEntity": "Account",
+  "whereclause": "",
+  "returnvars": [
+    {
+      "xState": "ADDED",
+      "elmVisible": "Y",
+      "elmName": "Account.accountMaster.accountBranch"
+    },
+    {
+      "xState": "ADDED",
+      "elmVisible": "Y",
+      "elmName": "Account.accountMaster.accountName"
+    },
+    {
+      "xState": "ADDED",
+      "elmVisible": "Y",
+      "elmName": "Account.accountMaster.auditTrail.createdBy"
+    }
+  ],
+  "bindvars": [
+    {
+      "xState": "ADDED",
+      "bindVarType": "STRING",
+      "bindVarName": "Account.accountMaster.accountId"
+    }
+  ]
+}

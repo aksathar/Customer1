@@ -1,0 +1,12 @@
+{
+  "name": "CustomerAccountEntRelQuery",
+  "sourceModule": "BE",
+  "sourceAssetName": "CustomerAccount",
+  "sourceAssetType": "ENTITY_RELATION",
+  "type": "SERVICE",
+  "serviceType": "QUERY",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

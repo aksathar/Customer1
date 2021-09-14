@@ -1,0 +1,193 @@
+{
+  "type": "XDM_DYNAMIC_ATTRIBUTE_MAPPING",
+  "desc": "",
+  "gitStatus": "",
+  "name": "dsDynAccount",
+  "inherited": false,
+  "superType": "NONE",
+  "superName": "",
+  "filePath": "",
+  "childs": [
+    {
+      "type": "XDM_ELEMENT",
+      "desc": "NewSimpleAttribute",
+      "gitStatus": "",
+      "name": "dyAttr1",
+      "inherited": false,
+      "superType": "NONE",
+      "superName": "",
+      "filePath": "",
+      "xState": "NEW",
+      "childs": [],
+      "persistenceDetails": {
+        "dataStores": [],
+        "dataStoreId": "dsdsaccount",
+        "dataStoreColId": "DYATTR1"
+      },
+      "properties": {
+        "propClassName": "SYS_X3_40",
+        "dataType": "STRING",
+        "mandatory": false,
+        "strValidationType": "NONE",
+        "minDate": "292269055-12-02",
+        "maxDate": "292278994-08-17",
+        "maxDecimals": 2147483647,
+        "maxLen": 2147483647,
+        "minLen": 0,
+        "maxVal": 0,
+        "minVal": 0
+      },
+      "entityKey": true,
+      "key": true,
+      "filterable": false,
+      "resultSet": true
+    },
+    {
+      "type": "XDM_ELEMENT",
+      "desc": "NewSimpleAttribute",
+      "gitStatus": "",
+      "name": "dyAttr2",
+      "inherited": false,
+      "superType": "NONE",
+      "superName": "",
+      "filePath": "",
+      "xState": "NEW",
+      "childs": [],
+      "persistenceDetails": {
+        "dataStores": [],
+        "dataStoreId": "dsdsaccount",
+        "dataStoreColId": "DYATTR2"
+      },
+      "properties": {
+        "propClassName": "SYS_X3_41",
+        "dataType": "STRING",
+        "mandatory": false,
+        "strValidationType": "NONE",
+        "minDate": "292269055-12-02",
+        "maxDate": "292278994-08-17",
+        "maxDecimals": 2147483647,
+        "maxLen": 2147483647,
+        "minLen": 0,
+        "maxVal": 0,
+        "minVal": 0
+      },
+      "entityKey": false,
+      "key": false,
+      "filterable": false,
+      "resultSet": true
+    },
+    {
+      "type": "XDM_ELEMENT",
+      "desc": "NewSimpleAttribute",
+      "gitStatus": "",
+      "name": "dyAttr3",
+      "inherited": false,
+      "superType": "NONE",
+      "superName": "",
+      "filePath": "",
+      "xState": "NEW",
+      "childs": [],
+      "persistenceDetails": {
+        "dataStores": [],
+        "dataStoreId": "dsdsaccount",
+        "dataStoreColId": "DYATTR3"
+      },
+      "properties": {
+        "propClassName": "SYS_X3_42",
+        "dataType": "STRING",
+        "mandatory": false,
+        "strValidationType": "NONE",
+        "minDate": "292269055-12-02",
+        "maxDate": "292278994-08-17",
+        "maxDecimals": 2147483647,
+        "maxLen": 2147483647,
+        "minLen": 0,
+        "maxVal": 0,
+        "minVal": 0
+      },
+      "entityKey": false,
+      "key": false,
+      "filterable": false,
+      "resultSet": true
+    },
+    {
+      "type": "XDM_ELEMENT",
+      "desc": "",
+      "gitStatus": "",
+      "name": "xSysKey",
+      "inherited": false,
+      "filePath": "",
+      "childs": [],
+      "persistenceDetails": {
+        "dataStores": [],
+        "dataStoreId": "dsdsaccount",
+        "dataStoreColId": "XSYSKEY"
+      },
+      "properties": {
+        "propClassName": "SYS_X3_43",
+        "dataType": "STRING",
+        "mandatory": false,
+        "minDate": "292269055-12-02",
+        "maxDate": "292278994-08-17",
+        "maxDecimals": 2147483647,
+        "maxLen": 4000,
+        "minLen": 0,
+        "maxVal": 1.7976931348623157e+308,
+        "minVal": 5e-324
+      },
+      "entityKey": true,
+      "key": true,
+      "filterable": false,
+      "resultSet": true
+    }
+  ],
+  "persistenceDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dsdsaccount",
+        "dataStoreName": "DSACCOUNT",
+        "parentDataStoreId": "dsdsaccount",
+        "relation": {
+          "relationDefType": "JOIN",
+          "relationAttrs": [
+            {
+              "relationAttr1": "DYATTR1",
+              "relationAttr2": "DYATTR1"
+            },
+            {
+              "relationAttr1": "XSYSKEY",
+              "relationAttr2": "XSYSKEY"
+            }
+          ]
+        },
+        "propagationColumns": []
+      }
+    ]
+  },
+  "relationType": "ONETOONE",
+  "dbType": "RDBMS",
+  "xdmDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dsdsaccount",
+        "dataStoreName": "DSACCOUNT",
+        "parentDataStoreId": "dsdsaccount",
+        "relation": {
+          "relationDefType": "JOIN",
+          "relationAttrs": [
+            {
+              "relationAttr1": "DYATTR1",
+              "relationAttr2": "DYATTR1"
+            },
+            {
+              "relationAttr1": "XSYSKEY",
+              "relationAttr2": "XSYSKEY"
+            }
+          ]
+        },
+        "propagationColumns": []
+      }
+    ]
+  },
+  "masterDataStore": "dsdsaccount"
+}

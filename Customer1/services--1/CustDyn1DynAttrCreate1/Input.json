@@ -1,0 +1,85 @@
+{
+  "name": "Input",
+  "type": "INPUT",
+  "desc": "Input Params",
+  "childs": [
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "name": "dyAttr1",
+      "desc": "NewSimpleAttribute",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "entityKey": true,
+      "key": true
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "name": "dyAttr2",
+      "desc": "NewSimpleAttribute",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "name": "dyAttr3",
+      "desc": "NewSimpleAttribute",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    }
+  ],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": "",
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  }
+}

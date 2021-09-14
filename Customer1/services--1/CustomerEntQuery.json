@@ -1,0 +1,11 @@
+{
+  "name": "CustomerEntQuery",
+  "serviceType": "ENTITY_QUERY",
+  "entity": "Customer",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

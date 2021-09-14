@@ -1,0 +1,11 @@
+{
+  "name": "CustomerHierarchyEntRelSummry",
+  "serviceType": "ENTITY_SEARCH",
+  "entity": "CustomerHierarchy",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

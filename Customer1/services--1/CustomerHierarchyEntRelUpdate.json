@@ -1,0 +1,14 @@
+{
+  "name": "CustomerHierarchyEntRelUpdate",
+  "serviceType": "ENTITY_UPDATE",
+  "entity": "CustomerHierarchy",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM",
+  "origin": "BE",
+  "beanClass": "",
+  "internal": ""
+}

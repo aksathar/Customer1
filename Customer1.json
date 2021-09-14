@@ -1,0 +1,7 @@
+{
+        "name":"Customer1",
+        "desc":"Default Project for Xelerate",
+		"filePath": "/Customer1/Customer1.json",
+        "type":"APPLICATION",
+        "childs":[]    
+}

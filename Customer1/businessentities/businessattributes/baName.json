@@ -1,0 +1,104 @@
+{
+  "name": "baName",
+  "type": "COMPOSITE_BUSINESS_ATTRIBUTE",
+  "childs": [
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "",
+      "name": "title",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 10,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE",
+      "desc": "Title"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "",
+      "name": "firstName",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 100,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE",
+      "desc": "First Name"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "",
+      "name": "middleName",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 100,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE",
+      "desc": "Middle Name"
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "superType": "",
+      "name": "lastName",
+      "inherited": false,
+      "dataAttrType": "ELEMENT",
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": 100,
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "relationType": "ONETOONE",
+      "desc": "Last Name"
+    }
+  ],
+  "desc": "Name",
+  "dataAttrType": "NODE",
+  "superType": "",
+  "superName": "",
+  "relationType": "ONETOONE",
+  "properties": {}
+}

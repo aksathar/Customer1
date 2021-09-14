@@ -1,0 +1,12 @@
+{
+  "name": "CustDrv1DrvAttrSummary",
+  "sourceModule": "BE",
+  "sourceAssetName": "CustDrv1",
+  "sourceAssetType": "DERIVED_ATTRIBUTE",
+  "type": "SERVICE",
+  "serviceType": "MODEL_SEARCH_SERVICE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

@@ -1,0 +1,168 @@
+{
+  "type": "XDM_DERIVED_ATTRIBUTE_MAPPING",
+  "desc": "",
+  "gitStatus": "",
+  "name": "dsCustDrv1",
+  "inherited": false,
+  "superType": "NONE",
+  "superName": "",
+  "filePath": "",
+  "childs": [
+    {
+      "type": "XDM_NODE",
+      "superName": "",
+      "name": "custDrvNode",
+      "desc": "Derived Attributes",
+      "xState": "NEW",
+      "inherited": false,
+      "childs": [
+        {
+          "type": "XDM_ELEMENT",
+          "superName": "",
+          "name": "dAttr1",
+          "desc": "Attribute 1",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "key": false,
+          "entityKey": true,
+          "dataStores": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustdrvnode",
+            "dataStoreColId": "DATTR1"
+          }
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "superName": "",
+          "name": "dAttr2",
+          "desc": "Attribute 2",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "dataStores": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustdrvnode",
+            "dataStoreColId": "DATTR2"
+          }
+        },
+        {
+          "type": "XDM_ELEMENT",
+          "superName": "",
+          "name": "dAttr3",
+          "desc": "Attribute 3",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "dataStores": [],
+          "persistenceDetails": {
+            "dataStores": [],
+            "dataStoreId": "dscustdrvnode",
+            "dataStoreColId": "DATTR3"
+          }
+        }
+      ],
+      "relationType": "ONETOONE",
+      "dataStores": [
+        {
+          "dataStoreId": "dscustdrvnode",
+          "dataStoreName": "CUSTDRVNODE",
+          "parentDataStoreId": "dscustdrvnode",
+          "relation": {
+            "relationDefType": "JOIN",
+            "relationAttrs": [
+              {
+                "relationAttr1": "XSYSKEY",
+                "relationAttr2": "XSYSKEY"
+              }
+            ]
+          },
+          "propagationColumns": []
+        }
+      ],
+      "persistenceDetails": {
+        "dataStores": [
+          {
+            "dataStoreId": "dscustdrvnode"
+          }
+        ]
+      }
+    }
+  ],
+  "persistenceDetails": {
+    "dataStoreId": "",
+    "dataStoreColId": "",
+    "dataStores": []
+  },
+  "relationType": "ONETOONE",
+  "dbType": "RDBMS",
+  "xdmDetails": {
+    "dataStores": [
+      {
+        "dataStoreId": "dscustdrvnode",
+        "dataStoreName": "CUSTDRVNODE",
+        "parentDataStoreId": "dscustdrvnode",
+        "relation": {
+          "relationDefType": "JOIN",
+          "relationAttrs": [
+            {
+              "relationAttr1": "XSYSKEY",
+              "relationAttr2": "XSYSKEY"
+            }
+          ]
+        },
+        "propagationColumns": []
+      }
+    ]
+  },
+  "masterDataStore": "dscustdrvnode",
+  "dbRepository": "",
+  "dstype": "LOWVOLATILE",
+  "dbtype": "RDBMS",
+  "key": "",
+  "filterable": "",
+  "resultSet": "",
+  "entrelmapping": {
+    "root": {
+      "properties": {}
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "CustDrv1DrvAttrUpdate1",
+  "serviceType": "DERIVED_ATTRIBUTE_UPDATE",
+  "entity": "CustDrv1",
+  "type": "SERVICE",
+  "origin": "DERIVED_ATTRIBUTE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

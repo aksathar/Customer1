@@ -1,0 +1,980 @@
+{
+  "name": "CustDrv1DrvAttrSummary",
+  "desc": "CustDrv1DrvAttrSummary screen",
+  "type": "SCREEN",
+  "scrCategory": "SUMMARY",
+  "entities": [
+    "CustDrv1"
+  ],
+  "services": [
+    "CustDrv1DrvAttrSummary"
+  ],
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "dsgnrIdCntr": 9,
+  "header": {
+    "elmId": "header",
+    "childs": [
+      {
+        "custAttrs": [
+          {
+            "attrName": "",
+            "attrValue": ""
+          }
+        ],
+        "elmId": "panel",
+        "elmType": "COMPLEX",
+        "elmSubType": "PANEL",
+        "dsgnrId": "CustDrv1DrvAttrSummary_000000001",
+        "variations": "TRANSPARENT",
+        "childs": [
+          {
+            "elmId": "navbar",
+            "elmType": "COMPLEX",
+            "elmSubType": "NAVBAR",
+            "dsgnrId": "CustDrv1DrvAttrSummary_000000002",
+            "variations": "TRANSPARENT",
+            "childs": [
+              {
+                "rows": [],
+                "cols": [],
+                "elmId": "grid",
+                "elmType": "GRID",
+                "elmSubType": "GRID",
+                "dsgnrId": "CustDrv1DrvAttrSummary_000000003",
+                "gridtype": "CUSTOM",
+                "custCols": [
+                  {
+                    "custWidthValue": "200",
+                    "custWidthType": "px"
+                  },
+                  {
+                    "custWidthValue": "1",
+                    "custWidthType": "auto"
+                  }
+                ],
+                "childs": [
+                  {
+                    "elmId": "cell",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "CELL",
+                    "dsgnrId": "CustDrv1DrvAttrSummary_000000004",
+                    "justifyself": "LEFT",
+                    "alignself": "CENTER",
+                    "childs": [
+                      {
+                        "align": "left",
+                        "elmId": "image",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "IMAGE",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000005",
+                        "childs": [],
+                        "url": "assets/img/logo-header.png",
+                        "paddingLeftValue": "4"
+                      }
+                    ]
+                  },
+                  {
+                    "elmId": "cell",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "CELL",
+                    "dsgnrId": "CustDrv1DrvAttrSummary_000000006",
+                    "justifyself": "RIGHT",
+                    "alignself": "CENTER",
+                    "childs": [
+                      {
+                        "align": "left",
+                        "elmId": "hyperlink",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "HYPERLINK",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000007",
+                        "childs": [],
+                        "id": "notification",
+                        "icon": "fa fa-fw fa-bell-o",
+                        "iconposition": "RIGHT",
+                        "iconsize": "LARGE"
+                      },
+                      {
+                        "align": "left",
+                        "type": "p",
+                        "value": "Text",
+                        "format": "Normal",
+                        "elmId": "text",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "TEXT",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000008",
+                        "childs": [],
+                        "id": "userLanding",
+                        "paddingRightValue": "3",
+                        "paddingLeftValue": "3"
+                      },
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000009",
+                        "childs": [],
+                        "icon": "fa fa-fw fa-sign-out",
+                        "iconposition": "RIGHT",
+                        "iconsize": "LARGE",
+                        "variations": "TRANSPARENT",
+                        "size": "MEDIUM",
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "xelerate.server.logout"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dsgnrId": "header",
+    "elmType": "PORTION",
+    "elmSubType": "HEADER"
+  },
+  "sidebar": {
+    "elmId": "sidebar",
+    "childs": [],
+    "dsgnrId": "sidebar",
+    "elmType": "PORTION",
+    "elmSubType": "SIDEBAR"
+  },
+  "body": {
+    "elmId": "body",
+    "dsgnrId": "body",
+    "childs": [
+      {
+        "custAttrs": [
+          {
+            "attrName": "",
+            "attrValue": ""
+          }
+        ],
+        "elmId": "panel",
+        "elmType": "COMPLEX",
+        "elmSubType": "PANEL",
+        "dsgnrId": "CustDrv1DrvAttrSummary_000000010",
+        "variations": "TRANSPARENT",
+        "paddingRightValue": "4",
+        "paddingLeftValue": "4",
+        "classes": "subHeader",
+        "childs": [
+          {
+            "elmId": "navbar",
+            "elmType": "COMPLEX",
+            "elmSubType": "NAVBAR",
+            "dsgnrId": "CustDrv1DrvAttrSummary_000000011",
+            "variations": "TRANSPARENT",
+            "marginTopValue": "2",
+            "marginBottomValue": "2",
+            "childs": [
+              {
+                "rows": [],
+                "cols": [],
+                "elmId": "grid",
+                "elmType": "GRID",
+                "elmSubType": "GRID",
+                "dsgnrId": "CustDrv1DrvAttrSummary_000000012",
+                "gridtype": "RESPONSIVE",
+                "responsivecolcount": "2",
+                "childs": [
+                  {
+                    "elmId": "cell",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "CELL",
+                    "dsgnrId": "CustDrv1DrvAttrSummary_000000013",
+                    "phonelandscape": "xle-sm-col8",
+                    "phoneportrait": "xle-ti-col8",
+                    "desktop": "xle-lg-col8",
+                    "tablet": "xle-md-col8",
+                    "widescreen": "xle-xl-col8",
+                    "alignself": "CENTER",
+                    "childs": [
+                      {
+                        "align": "left",
+                        "type": "h4",
+                        "value": "Customer1 Summary",
+                        "format": "Normal",
+                        "elmId": "text",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "TEXT",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000014",
+                        "childs": []
+                      }
+                    ]
+                  },
+                  {
+                    "elmId": "cell",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "CELL",
+                    "dsgnrId": "CustDrv1DrvAttrSummary_000000015",
+                    "phonelandscape": "xle-sm-col4",
+                    "phoneportrait": "xle-ti-col4",
+                    "desktop": "xle-lg-col4",
+                    "tablet": "xle-md-col4",
+                    "widescreen": "xle-xl-col4",
+                    "justifyself": "RIGHT",
+                    "childs": [
+                      {
+                        "align": "left",
+                        "elmId": "button",
+                        "elmType": "SIMPLE",
+                        "elmSubType": "BUTTON",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000016",
+                        "childs": [],
+                        "id": "btn_create",
+                        "title": "New",
+                        "icon": "fa fa-plus fa-fw",
+                        "iconposition": "LEFT",
+                        "variations": "PRIMARYOUTLINE",
+                        "size": "sm",
+                        "style": "round",
+                        "events": [
+                          {
+                            "eventname": "onclick",
+                            "eventfunction": "create"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "custAttrs": [
+          {
+            "attrName": "",
+            "attrValue": ""
+          }
+        ],
+        "elmId": "panel",
+        "elmType": "COMPLEX",
+        "elmSubType": "PANEL",
+        "dsgnrId": "CustDrv1DrvAttrSummary_000000017",
+        "variations": "TRANSPARENT",
+        "paddingRightValue": "4",
+        "paddingLeftValue": "4",
+        "marginTopValue": "5",
+        "childs": [
+          {
+            "rows": [],
+            "cols": [],
+            "elmId": "grid",
+            "elmType": "GRID",
+            "elmSubType": "GRID",
+            "dsgnrId": "CustDrv1DrvAttrSummary_000000018",
+            "gridtype": "RESPONSIVE",
+            "childs": [
+              {
+                "elmId": "cell",
+                "elmType": "COMPLEX",
+                "elmSubType": "CELL",
+                "dsgnrId": "CustDrv1DrvAttrSummary_000000019",
+                "phonelandscape": "xle-sm-col12",
+                "phoneportrait": "xle-ti-col12",
+                "desktop": "xle-lg-col12",
+                "tablet": "xle-md-col12",
+                "widescreen": "xle-xl-col12",
+                "elementstack": "VERTICAL",
+                "childs": [
+                  {
+                    "custAttrs": [
+                      {
+                        "attrName": "",
+                        "attrValue": ""
+                      }
+                    ],
+                    "elmId": "panel",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "PANEL",
+                    "dsgnrId": "CustDrv1DrvAttrSummary_000000020",
+                    "variations": "DEFAULT",
+                    "marginBottomValue": "2",
+                    "childs": [
+                      {
+                        "custAttrs": [
+                          {
+                            "attrName": "",
+                            "attrValue": ""
+                          }
+                        ],
+                        "elmId": "form",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "FORM",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000021",
+                        "layout": "VERTICAL",
+                        "title": "Search By",
+                        "childs": [
+                          {
+                            "rows": [],
+                            "cols": [],
+                            "elmId": "grid",
+                            "elmType": "GRID",
+                            "elmSubType": "GRID",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000022",
+                            "gridtype": "RESPONSIVE",
+                            "classes": "summary-search",
+                            "childs": [
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000054",
+                                "childs": [
+                                  {
+                                    "elmId": "input",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "INPUT",
+                                    "title": "",
+                                    "size": "sm",
+                                    "xpath": "CustDrv1DrvAttrSummary_ip.CustDrv1.custDrvNode_filter.entityuId",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000055",
+                                    "childs": []
+                                  }
+                                ]
+                              },
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000058",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "childs": [
+                                  {
+                                    "elmId": "input",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "INPUT",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000059",
+                                    "childs": [],
+                                    "title": "Attribute 1",
+                                    "xpath": "CustDrv1DrvAttrSummary_ip.CustDrv1.custDrvNode_filter.dAttr1",
+                                    "inputtype": "TEXT",
+                                    "size": "sm"
+                                  }
+                                ]
+                              },
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000061",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "childs": [
+                                  {
+                                    "elmId": "input",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "INPUT",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000062",
+                                    "childs": [],
+                                    "title": "Attribute 2",
+                                    "xpath": "CustDrv1DrvAttrSummary_ip.CustDrv1.custDrvNode_filter.dAttr2",
+                                    "inputtype": "TEXT",
+                                    "size": "sm"
+                                  }
+                                ]
+                              },
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000064",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "childs": [
+                                  {
+                                    "elmId": "input",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "INPUT",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000065",
+                                    "childs": [],
+                                    "title": "Attribute 3",
+                                    "xpath": "CustDrv1DrvAttrSummary_ip.CustDrv1.custDrvNode_filter.dAttr3",
+                                    "inputtype": "TEXT",
+                                    "size": "sm"
+                                  }
+                                ]
+                              },
+                              {
+                                "elmId": "cell",
+                                "elmType": "COMPLEX",
+                                "elmSubType": "CELL",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000066",
+                                "phonelandscape": "xle-sm-col12",
+                                "phoneportrait": "xle-ti-col12",
+                                "desktop": "xle-lg-col6",
+                                "tablet": "xle-md-col6",
+                                "widescreen": "xle-xl-col2",
+                                "childs": [
+                                  {
+                                    "align": "left",
+                                    "elmId": "button",
+                                    "elmType": "SIMPLE",
+                                    "elmSubType": "BUTTON",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000067",
+                                    "childs": [],
+                                    "id": "btn_filter",
+                                    "title": "Search",
+                                    "icon": "fa fa-search fa-fw",
+                                    "iconposition": "LEFT",
+                                    "variations": "PRIMARYOUTLINE",
+                                    "style": "",
+                                    "size": "sm",
+                                    "events": [
+                                      {
+                                        "eventname": "onclick",
+                                        "eventfunction": "filter"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "responsivecolcount": 5
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "custAttrs": [
+                      {
+                        "attrName": "",
+                        "attrValue": ""
+                      }
+                    ],
+                    "elmId": "panel",
+                    "elmType": "COMPLEX",
+                    "elmSubType": "PANEL",
+                    "dsgnrId": "CustDrv1DrvAttrSummary_000000023",
+                    "variations": "DEFAULT",
+                    "childs": [
+                      {
+                        "rows": [],
+                        "cols": [],
+                        "elmId": "grid",
+                        "elmType": "GRID",
+                        "elmSubType": "GRID",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000024",
+                        "gridtype": "RESPONSIVE",
+                        "responsivecolcount": "4",
+                        "classes": "x-insights pt-3 pl-3 pr-3 pb-0",
+                        "childs": [
+                          {
+                            "elmId": "cell",
+                            "elmType": "COMPLEX",
+                            "elmSubType": "CELL",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000025",
+                            "phoneportrait": "xle-ti-col12",
+                            "phonelandscape": "xle-sm-col12",
+                            "tablet": "xle-md-col6",
+                            "desktop": "xle-lg-col3",
+                            "widescreen": "xle-xl-col3",
+                            "classes": "x-insight1",
+                            "childs": [
+                              {
+                                "rows": [],
+                                "cols": [],
+                                "elmId": "grid",
+                                "elmType": "GRID",
+                                "elmSubType": "GRID",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000026",
+                                "gridtype": "CUSTOM",
+                                "custCols": [
+                                  {
+                                    "custWidthValue": "60",
+                                    "custWidthType": "px"
+                                  },
+                                  {
+                                    "custWidthValue": "1",
+                                    "custWidthType": "auto"
+                                  }
+                                ],
+                                "rowgap": "0",
+                                "columngap": "0",
+                                "childs": [
+                                  {
+                                    "elmId": "cell",
+                                    "elmType": "COMPLEX",
+                                    "elmSubType": "CELL",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000027",
+                                    "justifyself": "CENTER",
+                                    "alignself": "CENTER",
+                                    "childs": [
+                                      {
+                                        "align": "left",
+                                        "elmId": "image",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "IMAGE",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000028",
+                                        "childs": [],
+                                        "url": "app/images/total.png",
+                                        "images": "total.png"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "elmId": "cell",
+                                    "elmType": "COMPLEX",
+                                    "elmSubType": "CELL",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000029",
+                                    "elementstack": "VERTICAL",
+                                    "classes": "p-2",
+                                    "childs": [
+                                      {
+                                        "align": "left",
+                                        "type": "p",
+                                        "value": "0",
+                                        "format": "Normal",
+                                        "elmId": "text",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "TEXT",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000030",
+                                        "childs": [],
+                                        "classes": "x-insight-value",
+                                        "id": "total_recs",
+                                        "custAttrs": [
+                                          {
+                                            "attrName": "#total_recs",
+                                            "attrValue": ""
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "align": "left",
+                                        "type": "p",
+                                        "value": "Total Records",
+                                        "format": "Normal",
+                                        "elmId": "text",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "TEXT",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000031",
+                                        "childs": [],
+                                        "classes": "x-insight-label"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "elmId": "cell",
+                            "elmType": "COMPLEX",
+                            "elmSubType": "CELL",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000032",
+                            "phoneportrait": "xle-ti-col12",
+                            "phonelandscape": "xle-sm-col12",
+                            "tablet": "xle-md-col6",
+                            "desktop": "xle-lg-col3",
+                            "widescreen": "xle-xl-col3",
+                            "classes": "x-insight2",
+                            "childs": [
+                              {
+                                "rows": [],
+                                "cols": [],
+                                "elmId": "grid",
+                                "elmType": "GRID",
+                                "elmSubType": "GRID",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000033",
+                                "gridtype": "CUSTOM",
+                                "custCols": [
+                                  {
+                                    "custWidthValue": "60",
+                                    "custWidthType": "px"
+                                  },
+                                  {
+                                    "custWidthValue": "1",
+                                    "custWidthType": "auto"
+                                  }
+                                ],
+                                "rowgap": "0",
+                                "columngap": "0",
+                                "childs": [
+                                  {
+                                    "elmId": "cell",
+                                    "elmType": "COMPLEX",
+                                    "elmSubType": "CELL",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000034",
+                                    "justifyself": "CENTER",
+                                    "alignself": "CENTER",
+                                    "childs": [
+                                      {
+                                        "align": "left",
+                                        "elmId": "image",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "IMAGE",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000035",
+                                        "childs": [],
+                                        "url": "app/images/recent.png",
+                                        "images": "recent.png"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "elmId": "cell",
+                                    "elmType": "COMPLEX",
+                                    "elmSubType": "CELL",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000036",
+                                    "elementstack": "VERTICAL",
+                                    "classes": "p-2",
+                                    "childs": [
+                                      {
+                                        "align": "left",
+                                        "type": "p",
+                                        "value": "0",
+                                        "format": "Normal",
+                                        "elmId": "text",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "TEXT",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000037",
+                                        "childs": [],
+                                        "classes": "x-insight-value",
+                                        "id": "recently_modified",
+                                        "custAttrs": [
+                                          {
+                                            "attrName": "#recently_modified",
+                                            "attrValue": ""
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "align": "left",
+                                        "type": "p",
+                                        "value": "Recently Modified",
+                                        "format": "Normal",
+                                        "elmId": "text",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "TEXT",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000038",
+                                        "childs": [],
+                                        "classes": "x-insight-label"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "elmId": "cell",
+                            "elmType": "COMPLEX",
+                            "elmSubType": "CELL",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000039",
+                            "phoneportrait": "xle-ti-col12",
+                            "phonelandscape": "xle-sm-col12",
+                            "tablet": "xle-md-col6",
+                            "desktop": "xle-lg-col3",
+                            "widescreen": "xle-xl-col3",
+                            "classes": "x-insight3",
+                            "childs": [
+                              {
+                                "rows": [],
+                                "cols": [],
+                                "elmId": "grid",
+                                "elmType": "GRID",
+                                "elmSubType": "GRID",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000040",
+                                "gridtype": "CUSTOM",
+                                "custCols": [
+                                  {
+                                    "custWidthValue": "60",
+                                    "custWidthType": "px"
+                                  },
+                                  {
+                                    "custWidthValue": "1",
+                                    "custWidthType": "auto"
+                                  }
+                                ],
+                                "rowgap": "0",
+                                "columngap": "0",
+                                "childs": [
+                                  {
+                                    "elmId": "cell",
+                                    "elmType": "COMPLEX",
+                                    "elmSubType": "CELL",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000041",
+                                    "justifyself": "CENTER",
+                                    "alignself": "CENTER",
+                                    "childs": [
+                                      {
+                                        "align": "left",
+                                        "elmId": "image",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "IMAGE",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000042",
+                                        "childs": [],
+                                        "url": "app/images/active.png",
+                                        "images": "active.png"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "elmId": "cell",
+                                    "elmType": "COMPLEX",
+                                    "elmSubType": "CELL",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000043",
+                                    "elementstack": "VERTICAL",
+                                    "classes": "p-2",
+                                    "childs": [
+                                      {
+                                        "align": "left",
+                                        "type": "p",
+                                        "value": "0",
+                                        "format": "Normal",
+                                        "elmId": "text",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "TEXT",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000044",
+                                        "childs": [],
+                                        "classes": "x-insight-value",
+                                        "id": "active",
+                                        "custAttrs": [
+                                          {
+                                            "attrName": "#active",
+                                            "attrValue": ""
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "align": "left",
+                                        "type": "p",
+                                        "value": "Active",
+                                        "format": "Normal",
+                                        "elmId": "text",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "TEXT",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000045",
+                                        "childs": [],
+                                        "classes": "x-insight-label"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "elmId": "cell",
+                            "elmType": "COMPLEX",
+                            "elmSubType": "CELL",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000046",
+                            "phoneportrait": "xle-ti-col12",
+                            "phonelandscape": "xle-sm-col12",
+                            "tablet": "xle-md-col6",
+                            "desktop": "xle-lg-col3",
+                            "widescreen": "xle-xl-col3",
+                            "classes": "x-insight4",
+                            "childs": [
+                              {
+                                "rows": [],
+                                "cols": [],
+                                "elmId": "grid",
+                                "elmType": "GRID",
+                                "elmSubType": "GRID",
+                                "dsgnrId": "CustDrv1DrvAttrSummary_000000047",
+                                "gridtype": "CUSTOM",
+                                "custCols": [
+                                  {
+                                    "custWidthValue": "60",
+                                    "custWidthType": "px"
+                                  },
+                                  {
+                                    "custWidthValue": "1",
+                                    "custWidthType": "auto"
+                                  }
+                                ],
+                                "rowgap": "0",
+                                "columngap": "0",
+                                "childs": [
+                                  {
+                                    "elmId": "cell",
+                                    "elmType": "COMPLEX",
+                                    "elmSubType": "CELL",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000048",
+                                    "justifyself": "CENTER",
+                                    "alignself": "CENTER",
+                                    "childs": [
+                                      {
+                                        "align": "left",
+                                        "elmId": "image",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "IMAGE",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000049",
+                                        "childs": [],
+                                        "url": "app/images/closed.png",
+                                        "images": "closed.png"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "elmId": "cell",
+                                    "elmType": "COMPLEX",
+                                    "elmSubType": "CELL",
+                                    "dsgnrId": "CustDrv1DrvAttrSummary_000000050",
+                                    "elementstack": "VERTICAL",
+                                    "classes": "p-2",
+                                    "childs": [
+                                      {
+                                        "align": "left",
+                                        "type": "p",
+                                        "value": "0",
+                                        "format": "Normal",
+                                        "elmId": "text",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "TEXT",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000051",
+                                        "childs": [],
+                                        "classes": "x-insight-value",
+                                        "id": "closed",
+                                        "custAttrs": [
+                                          {
+                                            "attrName": "#closed",
+                                            "attrValue": ""
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "align": "left",
+                                        "type": "p",
+                                        "value": "Closed",
+                                        "format": "Normal",
+                                        "elmId": "text",
+                                        "elmType": "SIMPLE",
+                                        "elmSubType": "TEXT",
+                                        "dsgnrId": "CustDrv1DrvAttrSummary_000000052",
+                                        "childs": [],
+                                        "classes": "x-insight-label"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "elmId": "table",
+                        "elmType": "COMPLEX",
+                        "elmSubType": "TABLE",
+                        "dsgnrId": "CustDrv1DrvAttrSummary_000000053",
+                        "editable": "N",
+                        "multiple": "N",
+                        "selectall": "N",
+                        "search": "N",
+                        "paginationtype": "full_numbers",
+                        "classes": "x-clickable-rows",
+                        "events": [],
+                        "childs": [
+                          {
+                            "align": "left",
+                            "type": "p",
+                            "value": "Text",
+                            "format": "Normal",
+                            "elmId": "text",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "TEXT",
+                            "title": "",
+                            "size": "sm",
+                            "xpath": "CustDrv1DrvAttrSummary_ip.CustDrv1.custDrvNode[recno].entityuId",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000056",
+                            "childs": []
+                          },
+                          {
+                            "align": "left",
+                            "type": "p",
+                            "value": "Text",
+                            "format": "Normal",
+                            "elmId": "text",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "TEXT",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000057",
+                            "childs": [],
+                            "title": "Attribute 1",
+                            "xpath": "CustDrv1DrvAttrSummary_ip.CustDrv1.custDrvNode[recno].dAttr1",
+                            "inputtype": "TEXT",
+                            "size": "sm"
+                          },
+                          {
+                            "align": "left",
+                            "type": "p",
+                            "value": "Text",
+                            "format": "Normal",
+                            "elmId": "text",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "TEXT",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000060",
+                            "childs": [],
+                            "title": "Attribute 2",
+                            "xpath": "CustDrv1DrvAttrSummary_ip.CustDrv1.custDrvNode[recno].dAttr2",
+                            "inputtype": "TEXT",
+                            "size": "sm"
+                          },
+                          {
+                            "align": "left",
+                            "type": "p",
+                            "value": "Text",
+                            "format": "Normal",
+                            "elmId": "text",
+                            "elmType": "SIMPLE",
+                            "elmSubType": "TEXT",
+                            "dsgnrId": "CustDrv1DrvAttrSummary_000000063",
+                            "childs": [],
+                            "title": "Attribute 3",
+                            "xpath": "CustDrv1DrvAttrSummary_ip.CustDrv1.custDrvNode[recno].dAttr3",
+                            "inputtype": "TEXT",
+                            "size": "sm"
+                          }
+                        ],
+                        "title": "CUSTDRVNODE"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "elmType": "PORTION",
+    "elmSubType": "BODY",
+    "marginTopValue": "3"
+  },
+  "footer": {
+    "elmId": "footer",
+    "childs": [],
+    "dsgnrId": "footer",
+    "elmType": "PORTION",
+    "elmSubType": "FOOTER"
+  }
+}

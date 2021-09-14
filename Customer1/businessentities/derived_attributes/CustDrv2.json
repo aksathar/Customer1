@@ -1,0 +1,130 @@
+{
+  "name": "CustDrv2",
+  "type": "DERIVED_ATTRIBUTE",
+  "childs": [
+    {
+      "type": "NODE",
+      "superName": "",
+      "name": "custN1",
+      "desc": "NewCompositeAttribute",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {},
+      "childs": [
+        {
+          "type": "ELEMENT",
+          "superName": "",
+          "name": "custE1",
+          "desc": "NewSimpleAttribute",
+          "xState": "NEW",
+          "inherited": false,
+          "properties": {
+            "dataType": "STRING",
+            "minLen": "",
+            "maxLen": "",
+            "strValidationType": "NONE",
+            "pattern": "",
+            "lovId": "",
+            "minVal": "",
+            "maxVal": "",
+            "maxDecimals": "",
+            "minDate": "",
+            "maxDate": ""
+          },
+          "key": true,
+          "entityKey": true
+        }
+      ],
+      "relationType": "ONETOONE"
+    }
+  ],
+  "services": [
+    {
+      "name": "CustDrv22DrvAttrCreate",
+      "type": "MODEL_CREATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDrv22DrvAttrUpdate",
+      "type": "MODEL_UPDATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDrv22DrvAttrQuery",
+      "type": "MODEL_QUERY_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDrv22DrvAttrDelete",
+      "type": "MODEL_DELETE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDrv22DrvAttrSummary",
+      "type": "MODEL_SEARCH_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    }
+  ],
+  "superType": "",
+  "superName": "",
+  "xdmMapping": "dsCustDrv2",
+  "desc": "",
+  "key": "",
+  "relationType": "ONETOONE",
+  "auditRequired": "",
+  "auditXdmMapping": "",
+  "timeBound": "",
+  "filterable": "",
+  "resultSet": "",
+  "entityKey": "",
+  "dataStoreId": "",
+  "dataStoreColId": "",
+  "inherited": "",
+  "ent": {
+    "root": {
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    }
+  },
+  "properties": {},
+  "relations": [],
+  "constraints": [],
+  "sourceEntity": "Customer",
+  "mandatory": ""
+}

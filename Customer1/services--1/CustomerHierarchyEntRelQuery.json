@@ -1,0 +1,11 @@
+{
+  "name": "CustomerHierarchyEntRelQuery",
+  "serviceType": "ENTITY_QUERY",
+  "entity": "CustomerHierarchy",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

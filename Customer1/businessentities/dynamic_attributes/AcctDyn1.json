@@ -1,0 +1,165 @@
+{
+  "name": "AcctDyn1",
+  "type": "DYNAMIC_ATTRIBUTE",
+  "childs": [
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "name": "dyAttr1",
+      "desc": "NewSimpleAttribute",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      },
+      "entityKey": true,
+      "key": true
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "name": "dyAttr2",
+      "desc": "NewSimpleAttribute",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    },
+    {
+      "type": "ELEMENT",
+      "superName": "",
+      "name": "dyAttr3",
+      "desc": "NewSimpleAttribute",
+      "xState": "NEW",
+      "inherited": false,
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    }
+  ],
+  "services": [
+    {
+      "name": "CustDyn1DynAttrCreate",
+      "type": "MODEL_CREATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDyn1DynAttrUpdate",
+      "type": "MODEL_UPDATE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDyn1DynAttrQuery",
+      "type": "MODEL_QUERY_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDyn1DynAttrDelete",
+      "type": "MODEL_DELETE_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    },
+    {
+      "name": "CustDyn1DynAttrSummary",
+      "type": "MODEL_SEARCH_SERVICE",
+      "enabled": true,
+      "mrRequest": false,
+      "mrResponse": false,
+      "customQuery": "",
+      "bindVariables": "",
+      "beanName": ""
+    }
+  ],
+  "superType": "",
+  "superName": "",
+  "xdmMapping": "dsDynAccount",
+  "desc": "",
+  "key": "",
+  "relationType": "ONETOONE",
+  "auditRequired": "",
+  "auditXdmMapping": "",
+  "timeBound": "",
+  "filterable": "",
+  "resultSet": "",
+  "entityKey": "",
+  "dataStoreId": "",
+  "dataStoreColId": "",
+  "inherited": "",
+  "ent": {
+    "root": {
+      "properties": {
+        "dataType": "STRING",
+        "minLen": "",
+        "maxLen": "",
+        "strValidationType": "NONE",
+        "pattern": "",
+        "lovId": "",
+        "minVal": "",
+        "maxVal": "",
+        "maxDecimals": "",
+        "minDate": "",
+        "maxDate": ""
+      }
+    }
+  },
+  "properties": {},
+  "relations": [],
+  "constraints": [],
+  "sourceEntity": "Account",
+  "dervattr": {
+    "root": {
+      "mandatory": ""
+    }
+  },
+  "mandatory": ""
+}

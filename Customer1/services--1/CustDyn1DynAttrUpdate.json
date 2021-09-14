@@ -1,0 +1,11 @@
+{
+  "name": "CustDyn1DynAttrUpdate",
+  "serviceType": "ENTITY_UPDATE",
+  "entity": "CustDyn1",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}

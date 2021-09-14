@@ -1,0 +1,22 @@
+{
+  "name": "baCurrencyCode",
+  "type": "SIMPLE_BUSINESS_ATTRIBUTE",
+  "childs": [],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": 3,
+    "maxLen": 3,
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  },
+  "desc": "Currency Code",
+  "dataAttrType": "",
+  "superType": "",
+  "superName": ""
+}

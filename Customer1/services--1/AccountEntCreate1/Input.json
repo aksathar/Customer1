@@ -1,0 +1,19 @@
+{
+  "name": "Input",
+  "type": "INPUT",
+  "desc": "Input Params",
+  "childs": [],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": "",
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  }
+}

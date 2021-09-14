@@ -1,0 +1,22 @@
+{
+  "name": "baCustomerId",
+  "type": "SIMPLE_BUSINESS_ATTRIBUTE",
+  "childs": [],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": 20,
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  },
+  "desc": "Customer Id",
+  "dataAttrType": "",
+  "superType": "",
+  "superName": ""
+}

@@ -1,0 +1,43 @@
+{
+  "type": "DATA_STORE",
+  "desc": "",
+  "gitStatus": "",
+  "name": "CUSTDRVNODE",
+  "inherited": false,
+  "filePath": "",
+  "childs": [],
+  "dbType": "RDBMS",
+  "columns": [
+    {
+      "name": "DATTR1",
+      "dataType": "STRING",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "DATTR2",
+      "dataType": "STRING",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "DATTR3",
+      "dataType": "STRING",
+      "length": 2147483647,
+      "pkColumn": false,
+      "mandatory": false
+    },
+    {
+      "name": "XSYSKEY",
+      "dataType": "STRING",
+      "length": 4000,
+      "pkColumn": true,
+      "mandatory": false
+    }
+  ],
+  "constraints": [],
+  "xState": "",
+  "childsMap": {}
+}

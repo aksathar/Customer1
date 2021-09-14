@@ -1,0 +1,9 @@
+{
+  "name": "AccountEntCreate",
+  "type": "SCRIPT",
+  "extension": "",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "content": "import { Component,\tOnInit,\tOnDestroy, ChangeDetectorRef, ViewChildren,\tQueryList, ChangeDetectionStrategy,\tElementRef,\tInput, AfterViewInit, ViewChild,} from \"@angular/core\";\nimport { FormGroup } from \"@angular/forms\";\nimport { XelerateService } from \"src/shared/services/xelerate.service\";\nimport { DetailBaseClass } from \"src/shared/templates/DetailBaseClass.component\";\nimport AccountEntCreateInfo from \"./accountentcreate-info.json\";\nimport { ContextProvider } from \"src/shared/services/context-provider.service\";\nimport { UtilityServices } from 'src/shared/services/utility.service';\n@Component({\n\tselector: \"app-accountentcreate\",\n\ttemplateUrl: \"./accountentcreate.component.html\",\n\tproviders: [ContextProvider],\n\tchangeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class AccountEntCreate extends DetailBaseClass {\n    name: string = \"AccountEntCreate\";\n\tconstructor(\n\t\tpublic xelerate: XelerateService,\n\t\tpublic cp: ContextProvider,\n\t\tpublic changeDetectorRef: ChangeDetectorRef,\n\t\tpublic elmRef: ElementRef\n\t) {\n\t\tsuper(xelerate, cp, changeDetectorRef, elmRef);\n\t\tthis.metaInfo = UtilityServices.copyJSON(AccountEntCreateInfo);\n\t}\n\tngAfterViewInit() {\n\t\tsuper.ngAfterViewInit();\n\t\tthis.personalizeView();\n\t\tthis.xelerate.setValue(\"userLanding\",this.xelerate.data.transferData.get(\"userId\"));\n\t\tthis.xelerate.addStickyHeader();\n\t\tthis.xelerate.propagateChangeDetection(this);\n\t}\n\tasync personalizeView() {\n\t\tUtilityServices.stopLoader(document.getElementsByClassName(\"xelerate-wrapper\")[0]);\n\t\tthis.prefs = await this.xelerate.server.getContent({ url: \"assets/\" + this.name + \"_prefs.json\" });\n\t\tthis.xelerate.personalizeWidgets(this);\n\t}\n}"
+}

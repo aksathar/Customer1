@@ -1,0 +1,19 @@
+{
+  "name": "Output",
+  "type": "OUTPUT",
+  "desc": "Output Params",
+  "childs": [],
+  "properties": {
+    "dataType": "STRING",
+    "minLen": "",
+    "maxLen": "",
+    "strValidationType": "NONE",
+    "pattern": "",
+    "lovId": "",
+    "minVal": "",
+    "maxVal": "",
+    "maxDecimals": "",
+    "minDate": "",
+    "maxDate": ""
+  }
+}

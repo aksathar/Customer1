@@ -1,0 +1,11 @@
+{
+  "name": "CustDyn1DynAttrQuery",
+  "serviceType": "ENTITY_QUERY",
+  "entity": "CustDyn1",
+  "type": "SERVICE",
+  "srcType": "BE",
+  "xState": "",
+  "childs": [],
+  "childsMap": {},
+  "serType": "CUSTOM"
+}
